@@ -76,12 +76,45 @@
 
         <div id="content">
             <div id="left">
-                <img src="images/simple1-3.png"><p>class photo, taken somewhere around school</p>
-                <img src="images/simple1-1.png"><p>class photo, taken somewhere around school</p>
+                
+                @{
+                    i = 0;
+                    
+                    foreach (Picture p in Model.pictures) {
+
+                        if (i % 2 == 0) {
+                            <img src="~/images/@p.name">
+                            <p>@p.description</p>
+                        }
+
+                        i++;
+                    }
+                }
+                
+                @* <img src="images/simple1-3.png"> *@
+                @* <p>class photo, taken somewhere around school</p> *@
+                @* <img src="images/simple1-1.png"> *@
+                @* <p>class photo, taken somewhere around school</p> *@
             </div>
 
             <div id="right">
-                <img src="images/simple1-2.png"><p>class photo, taken somewhere around school</p>
+                
+                @{
+                    i = 0;
+                                    
+                    foreach (Picture p in Model.pictures) {
+                
+                        if (i % 2 == 1) {
+                            <img src="~/images/@p.name">
+                            <p>@p.description</p>
+                        }
+                
+                        i++;
+                    }
+                }
+                
+                @* <img src="images/simple1-2.png"> *@
+                @* <p>class photo, taken somewhere around school</p> *@
             </div>
         </div>
     </div>

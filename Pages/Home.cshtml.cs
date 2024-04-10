@@ -10,12 +10,17 @@ public class HomeModel : PageModel {
     public JsonFileLegacyService legacyService;
     public IEnumerable<Legacy>? legacies { get; private set; }
 
-    public HomeModel(ILogger<HomeModel> logger, JsonFileLegacyService legacyService) {
+    public JsonFilePictureService pictureService;
+    public IEnumerable<Picture>? pictures { get; private set; }
+
+    public HomeModel(ILogger<HomeModel> logger, JsonFileLegacyService legacyService, JsonFilePictureService pictureService) {
         _logger = logger;
         this.legacyService = legacyService;
+        this.pictureService = pictureService;
     }
 
     public void OnGet() {
         legacies = legacyService.GetLegacies();
+        pictures = pictureService.GetPictures();
     }
 }
