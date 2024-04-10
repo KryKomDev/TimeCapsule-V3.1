@@ -13,12 +13,9 @@ public class HomeModel : PageModel {
     public HomeModel(ILogger<HomeModel> logger, JsonFileLegacyService legacyService) {
         _logger = logger;
         this.legacyService = legacyService;
-        
-        Console.WriteLine("Constructed!!!");
     }
 
     public void OnGet() {
         legacies = legacyService.GetLegacies();
-        Console.WriteLine("Get!!!");
     }
 }

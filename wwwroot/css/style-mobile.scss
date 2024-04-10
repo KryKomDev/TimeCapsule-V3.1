@@ -10,15 +10,13 @@
 // import fonts 
 // TODO: update to jetbrains sans when released
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
-
-// colors 
-$gymlit-yellow: #fac020;
-$gymlit-blue: #20049f;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 // ---- STYLE ----
 
 * {
-    font-family: "JetBrains Mono", monospace;
+    // font-family: "JetBrains Mono", monospace;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 body {
@@ -27,21 +25,8 @@ body {
 
 header {
     display: flex;
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
     border-bottom: 1px solid colors.$gray-3;
-    
-    // #g {
-    //     color: colors.$orange-5;
-    // }
-
-    // #t {
-    //     color: colors.$green-5;
-    // }
-
-    // #c {
-    //     color: colors.$aqua-5;
-    // }
     
     p {
         font-size: x-large;
@@ -50,13 +35,10 @@ header {
         color: colors.$red-1;
         font-weight: 900;
     }
-
-    
 }
 
 #home {
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid colors.$gray-3;
 
@@ -72,8 +54,7 @@ header {
 }
 
 #legacy {
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid colors.$gray-3;
 
@@ -85,6 +66,7 @@ header {
     p {
         color: colors.$gray-10;
         font-size: 90%;
+        margin-bottom: 20px;
 
         strong {
             color: colors.$orange-5;
@@ -93,8 +75,7 @@ header {
 }
 
 #photos {
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid colors.$gray-3;
 
@@ -111,12 +92,13 @@ header {
     p {
         font-size: small;
         color: colors.$gray-10;
+        margin-bottom: 30px;
+        margin-top: 5px;
     }
 }
 
 #about {
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid colors.$gray-3;
 
@@ -141,8 +123,7 @@ header {
 }
 
 #contact {
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid colors.$gray-3;
     
@@ -158,8 +139,7 @@ header {
 }
 
 footer {
-    margin: 20px;
-    margin-top: 0;
+    margin: 0 20px 20px;
 
     p {
         color: colors.$gray-7;

@@ -7,6 +7,17 @@
 
 <link rel="stylesheet" href="~/css/style.css"/>
 
+<script>
+    function isMobileDevice() {
+        return window.matchMedia("only screen and (max-width: 760px)").matches;
+	}
+
+    if (isMobileDevice()) {
+        window.alert("lhals zmrde za chvilku te poslem jinam");
+        window.location.replace("Mobile");
+    }
+</script>
+
 <div id="main">
     <header>
         <p><a id="n-home" href="#home">Úvod</a></p>

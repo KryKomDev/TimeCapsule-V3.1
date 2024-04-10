@@ -1,10 +1,16 @@
 @use 'util/colors';
 @use 'util/center';
 
+// import fonts 
+// TODO: update to jetbrains sans when released
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+// ---- STYLE ----
 
 * {
-    font-family: 'JetBrains Mono', monospace;
+    // font-family: "JetBrains Mono", monospace;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 body {
@@ -45,7 +51,7 @@ body {
     }
 
     h1 {
-        color: mix(colors.$purple-5, colors.$gray-10, 15);
+        color: mix(colors.$purple-5, colors.$gray-10, 15%);
         display: flex;
         align-items: center;
         justify-content: center;
