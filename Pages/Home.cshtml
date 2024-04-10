@@ -1,0 +1,122 @@
+@page
+@using TimeCapsuleV3._1.Models
+@model HomeModel
+@{
+    ViewData["Title"] = "Time Capsule";
+}
+
+<link rel="stylesheet" href="~/css/style.css"/>
+
+<div id="main">
+    <header>
+        <p><a id="n-home" href="#home">Úvod</a></p>
+        <p><a id="n-legacy" href="#legacy">Citáty a odkazy</a></p>
+        <p><a id="n-photos" href="#photos">Fotky</a></p>
+        <p><a id="n-about" href="#about">O projektu</a></p>
+        <p><a id="n-contact" href="#contact">Kontaktujte nás</a></p>
+        <p><a id="n-index" asp-area="" asp-page="/Index">Zpět</a></p>
+    </header>
+    
+    <div id="home">
+        <h1>Vítejte na stránce naší časové kapsle</h1>
+        <p>tato stránka má posloužit jako jakási časová kapsle Fka GymLitu (2019 - 2027)</p>
+        <p>doufáme že se dozvíte něco nového o historii školy i o tom jak to tu chodilo</p>
+        <p>bavte se :)</p>
+    </div>
+    
+    <div id="legacy">
+        <div class="header">
+            <h1>Citáty a odkazy</h1>
+        </div>
+        <table>
+            <tr>
+                <th style="width: 50%;"></th>
+                <th style="width: 50%;"></th>
+            </tr>
+            
+            @{
+                int i = 0;
+                foreach(Legacy l in Model.legacies) {
+                    if (i % 2 == 0) {
+                        <tr>
+                            <td><p><strong>@l.person:</strong> @l.message</p></td>
+                            <td></td>
+                        </tr>
+                    }
+                    else {
+                        <tr>
+                            <td></td>
+                            <td><p><strong>@l.person:</strong> @l.message</p></td>
+                        </tr>
+                    }
+                    i++;
+                }
+            }
+            
+        </table>
+        
+    </div>
+
+    <div id="photos">
+        <div class="header">
+            <h1>Fotky</h1>
+            <p>these photos were taken in school year 2022/2023, please do not distribute</p>
+        </div>
+
+        <div id="content">
+            <div id="left">
+                <img src="images/simple1-3.png"><p>class photo, taken somewhere around school</p>
+                <img src="images/simple1-1.png"><p>class photo, taken somewhere around school</p>
+            </div>
+
+            <div id="right">
+                <img src="images/simple1-2.png"><p>class photo, taken somewhere around school</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="header"><h1>O projektu</h1></div>
+        <p>Tento projekt vznil k 50. výročí školy. Nemohli jsme se jako třída domluvit co dáme dovnitř a tak jsme vybrali postupné nabalování různých věcí na sebe.</p>
+        <p>Stránku původně vyvíjeli KryKom a ZlomenyMesic od verze 2 (toto je verze 3) ovšem už jen KryKom.</p>
+        <p>Co tu je to tu je, vidíte to sami. Ale doufáme že toho tady bude víc než ve verzi 1 nebo 2 (<a href="https://4fgymlit.github.io/TimeCapsule/">zde</a>) (bylo tam toho hodně málo)</p>
+
+        <h3>Další obsah je velmi technický,<br> pokud nechcete zemřít na přetížení mozku nepokračujte!</h3>
+        <p>Stránka je ve static HTML se styly generovanými z SCSS.</p>
+        <p>Hosting od GitHub Actions, což odpovídá statusu chudý student. Samozřejmě se můžeš inspirovat, projekt je na GitHubu <a href="https://github.com/KryKomDev/TimeCapsule">zde</a>.</p>
+    </div>
+
+    <div id="contact">
+        <div class="header"><h1>Contact us</h1></div>
+        <p>As we are approaching the end of this page, we want to give you some contact info. You can use it if you want to get help with something in school or if you just want to hire some devs :)</p>
+        <p>Fill out form below or use this address to contact us: <u>update@gmail.com</u></p>
+        <form action="">
+            <table>
+                <tr>
+                    <th style="width: 15%;"></th>
+                    <th style="width: 85%;"></th>
+                </tr>
+                <tr>
+                    <td><label for="name"><p>Name:</p></label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><p>Email:</p></label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="msg" rows="4"><p>Message:</p></label></td>
+                    <td><textarea name="msg" id="msg"></textarea></td>
+                </tr>
+            </table>
+            
+            <input type="submit" value="Send" id="submit">
+            <input type="text" style="height: 0; width: 0; margin: 0; visibility: hidden; padding: 0;" id="honeypot">
+        </form>
+    </div>
+
+    <footer>
+        <p>Time Capsule by KryKom 2024</p>
+        <p>all rights reserved, do NOT copy contained images</p>
+    </footer>
+</div>

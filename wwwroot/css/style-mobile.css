@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap");
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  background: #111;
+}
+
+header {
+  display: flex;
+  margin: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid #333;
+}
+header p {
+  font-size: x-large;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #b22121;
+  font-weight: 900;
+}
+
+#home {
+  margin: 20px;
+  margin-top: 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+#home h1 {
+  color: #b22121;
+  font-size: 170%;
+}
+#home p {
+  color: #aaa;
+  font-size: 90%;
+}
+
+#legacy {
+  margin: 20px;
+  margin-top: 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+#legacy h1 {
+  color: #995f2c;
+  font-size: 170%;
+}
+#legacy p {
+  color: #aaa;
+  font-size: 90%;
+}
+#legacy p strong {
+  color: #ffb649;
+}
+
+#photos {
+  margin: 20px;
+  margin-top: 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+#photos h1 {
+  color: #e8cf15;
+  font-size: 170%;
+}
+#photos img {
+  width: 100%;
+  border-radius: 10px;
+}
+#photos p {
+  font-size: small;
+  color: #aaa;
+}
+
+#about {
+  margin: 20px;
+  margin-top: 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+#about h1 {
+  color: #49d117;
+  font-size: 170%;
+}
+#about p {
+  color: #aaa;
+  font-size: 90%;
+}
+#about a {
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
+  color: #6cff37;
+}
+#about h3 {
+  color: #ccc;
+}
+
+#contact {
+  margin: 20px;
+  margin-top: 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+#contact h1 {
+  color: #1752d1;
+  font-size: 170%;
+}
+#contact p {
+  color: #aaa;
+  font-size: 90%;
+}
+
+footer {
+  margin: 20px;
+  margin-top: 0;
+}
+footer p {
+  color: #777;
+  font-size: smaller;
+}/*# sourceMappingURL=style-mobile.css.map */

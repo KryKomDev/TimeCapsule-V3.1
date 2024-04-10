@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "person":"KryKom",
+    "message":"Všechny programovací jazyky jsou vesměs to stejné. Tedy pokud nepočítáme python a javascript."
+  },
+  {
+    "id": 2,
+    "person":"EmaD",
+    "message":"lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 3,
+    "person":"ZlomenyMesic",
+    "message":"Pokud se někdy v noci rozhlédnu po obloze a uvidím reklamu na mekáč, tak se stanu teroristou!"
+  },
+  {
+    "id": 4,
+    "person":"Rakosnicek",
+    "message":"lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 5,
+    "person":"Panda",
+    "message":"lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 6,
+    "person":"Panda",
+    "message":"lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 7,
+    "person":"Panda",
+    "message":"lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 8,
+    "person":"KryKom",
+    "message":"Školství nás má učit řešit problémy. Paradox je, že nám jich samo dává nezvladatelné množství."
+  }
+]

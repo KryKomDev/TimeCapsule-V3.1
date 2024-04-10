@@ -1,0 +1,168 @@
+// 
+// TimeCapsule V3
+// by KryKom 2024
+//
+
+// import files
+@use 'util/colors';
+@use 'util/center';
+
+// import fonts 
+// TODO: update to jetbrains sans when released
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+// colors 
+$gymlit-yellow: #fac020;
+$gymlit-blue: #20049f;
+
+// ---- STYLE ----
+
+* {
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+    background: colors.$gray-1;
+}
+
+header {
+    display: flex;
+    margin: 20px;
+    margin-top: 0;
+    border-bottom: 1px solid colors.$gray-3;
+    
+    // #g {
+    //     color: colors.$orange-5;
+    // }
+
+    // #t {
+    //     color: colors.$green-5;
+    // }
+
+    // #c {
+    //     color: colors.$aqua-5;
+    // }
+    
+    p {
+        font-size: x-large;
+        margin-right: 20px;
+        text-transform: uppercase;
+        color: colors.$red-1;
+        font-weight: 900;
+    }
+
+    
+}
+
+#home {
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid colors.$gray-3;
+
+    h1 {
+        color: colors.$red-1;
+        font-size: 170%;
+    }
+
+    p {
+        color: colors.$gray-10;
+        font-size: 90%;
+    }
+}
+
+#legacy {
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid colors.$gray-3;
+
+    h1 {
+        color: colors.$orange-1;
+        font-size: 170%;
+    }
+
+    p {
+        color: colors.$gray-10;
+        font-size: 90%;
+
+        strong {
+            color: colors.$orange-5;
+        }
+    }
+}
+
+#photos {
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid colors.$gray-3;
+
+    h1 {
+        color: colors.$yellow-3;
+        font-size: 170%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    p {
+        font-size: small;
+        color: colors.$gray-10;
+    }
+}
+
+#about {
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid colors.$gray-3;
+
+    h1 {
+        color: colors.$green-3;
+        font-size: 170%;
+    }
+
+    p {
+        color: colors.$gray-10;
+        font-size: 90%;
+    }
+
+    a {
+        text-decoration: 1px solid underline;
+        color: colors.$green-5;
+    }
+
+    h3 {
+        color: colors.$gray-12;
+    }
+}
+
+#contact {
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid colors.$gray-3;
+    
+    h1 {
+        color: colors.$blue-3;
+        font-size: 170%;
+    }
+
+    p {
+        color: colors.$gray-10;
+        font-size: 90%;
+    }
+}
+
+footer {
+    margin: 20px;
+    margin-top: 0;
+
+    p {
+        color: colors.$gray-7;
+        font-size: smaller;
+    }
+}

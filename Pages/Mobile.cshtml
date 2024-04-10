@@ -1,0 +1,64 @@
+@page
+@using TimeCapsuleV3._1.Models
+@model HomeModel
+@{
+    ViewData["Title"] = "Time Capsule";
+}
+
+<link rel="stylesheet" href="css/style-mobile.css"/>
+
+<header>
+    <!-- <p id="g">Gymlit</p>
+    <p id="t">Time</p>
+    <p id="c">Capsule</p> -->
+    <p>Gymlit Time Capsule</p>
+</header>
+
+<div id="home">
+    <h1>Vítejte na stránce naší časové kapsle</h1>
+    <p>tato stránka má posloužit jako jakási časová kapsle Fka GymLitu (2019 - 2027)</p>
+    <p>doufáme že se dozvíte něco nového o historii školy i o tom jak to tu chodilo</p>
+    <p>bavte se :)</p>
+</div>
+
+<div id="legacy">
+    <h1>Citáty a odkazy</h1>
+    
+    @{
+        foreach (Legacy l in Model.legacies) {
+            <p><strong>@l.person:</strong> @l.message</p>
+        }
+    }
+    
+</div>
+
+<div id="photos">
+    <h1>Fotky</h1>
+    <img src="~/images/simple1-1.png">
+    <p>class photo, taken somewhere around school</p>
+    <img src="~/images/simple1-2.png">
+    <p>class photo, taken somewhere around school</p>
+    <img src="~/images/simple1-3.png">
+    <p>class photo, taken somewhere around school</p>
+</div>
+
+<div id="about">
+    <h1>O projektu</h1>
+    <p>Tento projekt vznil k 50. výročí školy. Nemohli jsme se jako třída domluvit co dáme dovnitř a tak jsme vybrali postupné nabalování různých věcí na sebe.</p>
+    <p>Stránku původně vyvíjeli KryKom a ZlomenyMesic od verze 2 (toto je verze 3) ovšem už jen KryKom.</p>
+    <p>Co tu je to tu je, vidíte to sami. Ale doufáme že toho tady bude víc než ve verzi 1 nebo 2 (<a href="https://4fgymlit.github.io/TimeCapsule/">zde</a>) (bylo tam toho hodně málo)</p>
+
+    <h3>Další obsah je velmi technický,<br> pokud nechcete zemřít na přetížení mozku nepokračujte!</h3>
+    <p>Stránka je ve static HTML se styly generovanými z SCSS.</p>
+    <p>Hosting od GitHub Actions, což odpovídá statusu chudý student. Samozřejmě se můžeš inspirovat, projekt je na GitHubu <a href="https://github.com/KryKomDev/TimeCapsule">zde</a>.</p>
+</div>
+
+<div id="contact">
+    <h1>Kontaktujte nás</h1>
+    <p>Bohužel tato funkce není na mobilních zařízeních dostupná, použijte prosím počítačovou verzi stránky</p>
+</div>
+
+<footer>
+    <p>Time Capsule by KryKom 2024</p>
+    <p>all rights reserved, do NOT copy contained images</p>
+</footer>

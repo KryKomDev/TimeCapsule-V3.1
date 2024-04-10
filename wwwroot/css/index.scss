@@ -1,0 +1,59 @@
+@use 'util/colors';
+@use 'util/center';
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: colors.$gray-1;
+    color: colors.$gray-13;
+    font-size: 120%;
+    padding: 10px;
+    
+    @include center.center();
+
+    #buttons {
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 10px;
+            padding: 20px;
+            transition-duration: 1s;
+            border-radius: 10px;
+            text-decoration: none;
+            color: colors.$purple-5;
+            font-size: 90%;
+            
+            &:hover {
+                background-color: colors.$gray-2;
+                font-size: 110%;
+                text-decoration: 2px solid underline;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h1 {
+        color: mix(colors.$purple-5, colors.$gray-10, 15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #foot {
+        margin-top: 100px;
+        font-size: 70%;
+        color: colors.$gray-10;
+    }
+}
