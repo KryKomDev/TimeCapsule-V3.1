@@ -1,5 +1,8 @@
-﻿@page
+@page
 @using TimeCapsuleV3._1.Models
+@using System.Reflection.Metadata
+@using System.Text.Encodings.Web
+@using System.Xml
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -8,11 +11,21 @@
 <link rel="stylesheet" href="~/css/index.css"/>
 
 <div class="body">
+
     <h1 style="display: flex; justify-content: center;">Ahoj!</h1>
-    <p>z důvodu neschopnosti programátorů si vyber:</p>
-    <div id="buttons">
-        <a asp-area="" asp-page="/Mobile" id="mobile"><p>Jsem na mobilu</p></a>
-        <a asp-area="" asp-page="/Home" id="pc"><p>Jsem na PC</p></a>
+    <p>abys mohl / mohla pokračovat, zadej heslo:</p>
+
+    <div id="input">
+        <form id="form" runat="server">
+            <p>Heslo: <input id="password" name="password" type="text"/></p>
+            <a id="submit" onclick='check("password")'>
+                <p>Odeslat</p></a>
+        </form>
     </div>
-    <p id="foot">a i když u sebe nemáte druhý typ zařízení, stojí za to se podívat i na druhou verzi stránky</p>
+
+    <p id="foot">jestli neznáš heslo tak vypadni</p>
+
+    <script src="js/site.js"></script>
+    
 </div>
+

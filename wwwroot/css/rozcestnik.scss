@@ -18,36 +18,30 @@ body {
     color: colors.$gray-13;
     font-size: 120%;
     padding: 10px;
-
+    
     @include center.center();
 
-    #input {
+    #buttons {
         display: flex;
         justify-content: center;
 
-        input,  {
-            background-color: colors.$gray-1;
-            border: none;
-            border-bottom: 1px dashed colors.$gray-10;
-            outline: none;
-            width: 200px;
-            height: 30px;
-            color: colors.$gray-15;
-            font-size: 100%;
-            margin-left: 20px;
-        }
-
-        #submit {
+        a {
+            margin: 10px;
+            padding: 20px;
             transition-duration: 1s;
             border-radius: 10px;
             text-decoration: none;
             color: colors.$purple-5;
-            font-size: 110%;
-            letter-spacing: 2px;
-            cursor: pointer;
+            font-size: 90%;
+            
+            &:hover {
+                background-color: colors.$gray-2;
+                font-size: 110%;
+                text-decoration: 2px solid underline;
+            }
 
             p {
-                margin: 40px;
+                margin: 0;
             }
         }
     }
